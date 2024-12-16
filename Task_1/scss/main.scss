@@ -1,0 +1,51 @@
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+@import 'typography';
+@import 'extends';
+@import 'color-matrix';
+
+$description_color: #c9c9c9;
+$description_weight: 600;
+$button_height: 40px;
+$button_width: 150px;
+$button_border-radius: 5px;
+$titles_weight: 700;
+$titles_color: black;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button_description{
+    color: $description_color;
+    font-weight: $description_weight;
+}
+h2{
+    font-weight: $titles_weight;
+    color: $titles_color;
+}
+.button_default{
+    height: $button_height;
+    width: $button_width;
+    border: none;
+    border-radius: $button_border-radius;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+#button_default-primary{
+    background-color: #6dc5ff;
+}
+#button_default-secondary{
+    background-color: #ffa75e;
+}
+#button_default-success{
+    background-color: rgb(18, 234, 18);
+}
+#button_default-danger{
+    background-color: rgb(249, 116, 116);
+}
+#button_default-warning{
+    background-color: rgb(241, 241, 70);
+}
+#button_default-info{
+    background-color: #62d3b9;
+}
