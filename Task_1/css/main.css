@@ -16,38 +16,239 @@ body {
 
 h2 {
   font-weight: 700;
-  color: black;
+  color: #000000;
 }
 
-.button_default {
+#button_default-primary {
   height: 40px;
   width: 150px;
   border: none;
   border-radius: 5px;
   -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
-}
-
-#button_default-primary {
+  cursor: pointer;
   background-color: #6dc5ff;
+  color: white;
+  font-size: 15px;
 }
 
 #button_default-secondary {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   background-color: #ffa75e;
+  color: white;
+  font-size: 15px;
 }
 
 #button_default-success {
-  background-color: rgb(18, 234, 18);
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #12ea12;
+  color: white;
+  font-size: 15px;
 }
 
 #button_default-danger {
-  background-color: rgb(249, 116, 116);
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #f97474;
+  color: white;
+  font-size: 15px;
 }
 
 #button_default-warning {
-  background-color: rgb(241, 241, 70);
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #f1f146;
+  color: white;
+  font-size: 15px;
 }
 
 #button_default-info {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   background-color: #62d3b9;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-primary {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #3ab1ff;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-secondary {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #ff8b2b;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-success {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #0ebb0e;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-danger {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #f74343;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-warning {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #eded17;
+  color: white;
+  font-size: 15px;
+}
+
+#button_hover-info {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #3ac8a7;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-primary {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #079cff;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-secondary {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #f77000;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-success {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #0b8b0b;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-danger {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #f51212;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-warning {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #c2c20f;
+  color: white;
+  font-size: 15px;
+}
+
+#button_active-info {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #2da287;
+  color: white;
+  font-size: 15px;
 }

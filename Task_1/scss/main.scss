@@ -5,14 +5,6 @@
 @import 'extends';
 @import 'color-matrix';
 
-$description_color: #c9c9c9;
-$description_weight: 600;
-$button_height: 40px;
-$button_width: 150px;
-$button_border-radius: 5px;
-$titles_weight: 700;
-$titles_color: black;
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,28 +16,57 @@ h2{
     font-weight: $titles_weight;
     color: $titles_color;
 }
-.button_default{
-    height: $button_height;
-    width: $button_width;
-    border: none;
-    border-radius: $button_border-radius;
-    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
-}
 #button_default-primary{
-    background-color: #6dc5ff;
+    @include button_default($button_default_primary-color, white);
 }
 #button_default-secondary{
-    background-color: #ffa75e;
+    @include button_default($button_default_secondary-color, white);
 }
 #button_default-success{
-    background-color: rgb(18, 234, 18);
+    @include button_default($button_default_success-color, white);
 }
 #button_default-danger{
-    background-color: rgb(249, 116, 116);
+    @include button_default($button_default_danger-color, white);
 }
 #button_default-warning{
-    background-color: rgb(241, 241, 70);
+    @include button_default($button_default_warning-color, white);
 }
 #button_default-info{
-    background-color: #62d3b9;
+    @include button_default($button_default_info-color, white);
+}
+#button_hover-primary{
+    @include button_default($button_hover_primary-color, white);
+}
+#button_hover-secondary{
+    @include button_default($button_hover_secondary-color, white);
+}
+#button_hover-success{
+    @include button_default($button_hover_success-color, white);
+}
+#button_hover-danger{
+    @include button_default($button_hover_danger-color, white);
+}
+#button_hover-warning{
+    @include button_default($button_hover_warning-color, white);
+}
+#button_hover-info{
+    @include button_default($button_hover_info-color, white);
+}
+#button_active-primary{
+    @include button_default($button_active_primary-color, white);
+}
+#button_active-secondary{
+    @include button_default($button_active_secondary-color, white);
+}
+#button_active-success{
+    @include button_default($button_active_success-color, white);
+}
+#button_active-danger{
+    @include button_default($button_active_danger-color, white);
+}
+#button_active-warning{
+    @include button_default($button_active_warning-color, white);
+}
+#button_active-info{
+    @include button_default($button_active_info-color, white);
 }

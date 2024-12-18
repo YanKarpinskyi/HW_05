@@ -1,0 +1,11 @@
+@mixin button_default($bg-color, $text-color){
+    height: $button_height;
+    width: $button_width;
+    border: none;
+    border-radius: $button_border-radius;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: $bg-color;
+    color: $text-color;
+    font-size: $button_font-size;
+}

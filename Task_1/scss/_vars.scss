@@ -1,0 +1,32 @@
+$description_color: #c9c9c9;
+$description_weight: 600;
+$button_height: 40px;
+$button_width: 150px;
+$button_border-radius: 5px;
+$titles_weight: 700;
+$titles_color: #000000;
+$button_font-size: 15px;
+
+$button_default_primary-color: #6dc5ff;
+$button_hover_primary-color: darken($button_default_primary-color, 10%);
+$button_active_primary-color: darken($button_hover_primary-color, 10%);
+
+$button_default_secondary-color: #ffa75e;
+$button_hover_secondary-color: darken($button_default_secondary-color, 10%);
+$button_active_secondary-color: darken($button_hover_secondary-color, 10%);
+
+$button_default_success-color:  #12ea12;
+$button_hover_success-color: darken($button_default_success-color, 10%);
+$button_active_success-color: darken($button_hover_success-color, 10%);
+
+$button_default_danger-color: #f97474;
+$button_hover_danger-color: darken($button_default_danger-color, 10%);
+$button_active_danger-color: darken($button_hover_danger-color, 10%);
+
+$button_default_warning-color: #f1f146;
+$button_hover_warning-color: darken($button_default_warning-color, 10%);
+$button_active_warning-color: darken($button_hover_warning-color, 10%);
+
+$button_default_info-color: #62d3b9;
+$button_hover_info-color: darken($button_default_info-color, 10%);
+$button_active_info-color: darken($button_hover_info-color, 10%);
