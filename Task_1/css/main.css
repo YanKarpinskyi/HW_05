@@ -269,6 +269,20 @@ h2 {
   font-size: 15px;
 }
 
+.tabs__container {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+
+.green__tabs__container,
+.red__tabs__container {
+  display: inline-block;
+}
+
+.red__tabs__container {
+  margin-left: 12%;
+}
+
 .tabs-line__container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
