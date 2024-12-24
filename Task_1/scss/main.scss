@@ -5,113 +5,134 @@
 @import 'extends';
 @import 'color-matrix';
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 13%;
 }
-.button_description{
+.button_description {
     font-weight: $description_weight;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.button_description-default{
+.button_description-default {
     color: $button_description_color-default;
 }
-.button_description-hover{
+.button_description-hover {
     color: $button_description_color-hover;
 }
-.button_description-active{
+.button_description-active {
     color: $button_description_color-active;
 }
-h2{
+h2 {
     font-weight: $titles_weight;
     color: $titles_color;
     margin-top: 55px;
     margin-bottom: 35px;
 }
-#button_default-primary{
+#button_default-primary {
     @include button_default($button_default_primary-color, white);
 }
-#button_default-secondary{
+#button_default-secondary {
     @include button_default($button_default_secondary-color, white);
 }
-#button_default-success{
+#button_default-success {
     @include button_default($button_default_success-color, white);
 }
-#button_default-danger{
+#button_default-danger {
     @include button_default($button_default_danger-color, white);
 }
-#button_default-warning{
+#button_default-warning {
     @include button_default($button_default_warning-color, white);
 }
-#button_default-info{
+#button_default-info {
     @include button_default($button_default_info-color, white);
 }
-#button_hover-primary{
+#button_hover-primary {
     @include button_default($button_hover_primary-color, white);
 }
-#button_hover-secondary{
+#button_hover-secondary {
     @include button_default($button_hover_secondary-color, white);
 }
-#button_hover-success{
+#button_hover-success {
     @include button_default($button_hover_success-color, white);
 }
-#button_hover-danger{
+#button_hover-danger {
     @include button_default($button_hover_danger-color, white);
 }
-#button_hover-warning{
+#button_hover-warning {
     @include button_default($button_hover_warning-color, white);
 }
-#button_hover-info{
+#button_hover-info {
     @include button_default($button_hover_info-color, white);
 }
-#button_active-primary{
+#button_active-primary {
     @include button_default($button_active_primary-color, white);
 }
-#button_active-secondary{
+#button_active-secondary {
     @include button_default($button_active_secondary-color, white);
 }
-#button_active-success{
+#button_active-success {
     @include button_default($button_active_success-color, white);
 }
-#button_active-danger{
+#button_active-danger {
     @include button_default($button_active_danger-color, white);
 }
-#button_active-warning{
+#button_active-warning {
     @include button_default($button_active_warning-color, white);
 }
-#button_active-info{
+#button_active-info {
     @include button_default($button_active_info-color, white);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tabs__container{
+.tabs__container {
     margin-top: 50px;
     margin-left: 8%;
+    .tabs-line__container {
+        @include tabs-container();
+        > .tab-line-label:hover {
+            color: $tab-checked-hover-color;
+        }
+        > .tab__input:checked + .tab-line-label {
+            color: $tab-checked-hover-color;
+            border-width: 2px;
+        } 
+        > .tab__input:checked + .tab-wide-label {
+            color: #fff;
+        } 
+    }
+    .tabs-wide__container {
+        @include tabs-container();
+        border: 1px solid #ddd;
+        > .tab-wide-label {
+            @include tab-label();
+            border: $tab-label_border-color;
+            border-bottom: $tab-wide-label-border; 
+            border-top: $tab-wide-label-border;
+        }
+        > .tab-wide-label:hover {
+            color: $tab-checked-hover-color;
+        }
+        > .tab-wide-label:nth-child(2) {   
+            border: $tab-wide-label-border;
+            @include tab-wide-label_bradius_first-tab();
+        }
+        > .tab-wide-label:last-child {
+            border-right: $tab-wide-label-border;
+            @include tab-wide-label_bradius_last-tab();
+        }
+        > .tab-wide-label:not(:last-child) {
+            border-right: $tab-wide-label-border;
+        } 
+        > .tab__input:checked + .tab-wide-label {
+            color: #fff;
+        } 
+    
+    }
 }
-
 .green__tabs__container,
-.red__tabs__container{
+.red__tabs__container {
     display: inline-block;
 }
-
-// .green__tabs__container,
-.red__tabs__container{
-    margin-left: 12%;
-}
-
 .tabs-line__container {
     @include tabs-container();
 }
@@ -121,39 +142,32 @@ h2{
 .tab-line-label {
     @include tab-label();
 }
-.tab-line-label:hover {
-    color: $tab-checked-hover-color;
+.green__tabs__container {
+    > .tabs-line__container {
+        @include tabs-container();
+        > .tab__input:checked + .tab-line-label {
+            border-color: #5bc286;
+        } 
+        > .tab__input:checked + .tab-wide-label {
+            background-color: #5bc286;
+        } 
+    }
+    > .tabs-wide__container {
+        > .tab__input:checked + .tab-wide-label {
+            background-color: #5bc286;
+        } 
+    }
 }
-.tab__input:checked + .tab-line-label {
-    color: $tab-checked-hover-color;
-    border-color: #2ecc71;
-    border-width: 2px;
-}
-.tabs-wide__container {
-    @include tabs-container();
-    border: 1px solid #ddd;
-}
-.tab-wide-label {
-    @include tab-label();
-    border: $tab-label_border-color;
-    border-bottom: $tab-wide-label-border; 
-    border-top: $tab-wide-label-border;
-}
-.tab-wide-label:nth-child(2) {   
-    border: $tab-wide-label-border;
-    @include tab-wide-label_bradius_first-tab();
-}
-.tab-wide-label:last-child {
-    border-right: $tab-wide-label-border;
-    @include tab-wide-label_bradius_last-tab();
-}
-.tab-wide-label:not(:last-child) {
-    border-right: $tab-wide-label-border;
-}
-.tab-wide-label:hover {
-    color: $tab-checked-hover-color;
-}
-.tab__input:checked + .tab-wide-label {
-    color: #fff;
-    background-color: #2ecc71;
+.red__tabs__container {
+    margin-left: 12%;
+    > .tabs-line__container {
+        > .tab__input:checked + .tab-line-label {
+            border-color: #ec5c5c;
+        }        
+    }  
+    > .tabs-wide__container {
+        > .tab__input:checked + .tab-wide-label {
+            background-color: #ec5c5c;
+        } 
+    } 
 }
