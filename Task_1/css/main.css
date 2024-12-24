@@ -44,7 +44,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #6dc5ff;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -57,7 +57,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #ffa75e;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -70,7 +70,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #12ea12;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -83,7 +83,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f97474;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -96,7 +96,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f1f146;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -109,7 +109,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #62d3b9;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -122,7 +122,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #3ab1ff;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -135,7 +135,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #ff8b2b;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -148,7 +148,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #0ebb0e;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -161,7 +161,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f74343;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -174,7 +174,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #eded17;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -187,7 +187,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #3ac8a7;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -200,7 +200,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #079cff;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -213,7 +213,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f77000;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -226,7 +226,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #0b8b0b;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -239,7 +239,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f51212;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -252,7 +252,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #c2c20f;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -265,7 +265,7 @@ h2 {
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #2da287;
-  color: white;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -287,26 +287,26 @@ h2 {
   border-width: 2px;
 }
 .tabs__container .tabs-line__container > .tab__input:checked + .tab-wide-label {
-  color: #fff;
+  color: #ffffff;
 }
 .tabs__container .tabs-wide__container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
 }
 .tabs__container .tabs-wide__container > .tab-wide-label {
   padding: 10px 20px;
   margin: 0;
   font-size: 14px;
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
   cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-bottom: none;
   border-top: none;
 }
@@ -327,7 +327,7 @@ h2 {
   border-right: none;
 }
 .tabs__container .tabs-wide__container > .tab__input:checked + .tab-wide-label {
-  color: #fff;
+  color: #ffffff;
 }
 
 .green__tabs__container,
@@ -350,10 +350,10 @@ h2 {
   padding: 10px 20px;
   margin: 0;
   font-size: 14px;
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
   cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

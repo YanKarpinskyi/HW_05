@@ -30,58 +30,58 @@ h2 {
     margin-bottom: 35px;
 }
 #button_default-primary {
-    @include button_default($button_default_primary-color, white);
+    @include button_default($button_default_primary-color, $button_text-color);
 }
 #button_default-secondary {
-    @include button_default($button_default_secondary-color, white);
+    @include button_default($button_default_secondary-color, $button_text-color);
 }
 #button_default-success {
-    @include button_default($button_default_success-color, white);
+    @include button_default($button_default_success-color, $button_text-color);
 }
 #button_default-danger {
-    @include button_default($button_default_danger-color, white);
+    @include button_default($button_default_danger-color, $button_text-color);
 }
 #button_default-warning {
-    @include button_default($button_default_warning-color, white);
+    @include button_default($button_default_warning-color, $button_text-color);
 }
 #button_default-info {
-    @include button_default($button_default_info-color, white);
+    @include button_default($button_default_info-color, $button_text-color);
 }
 #button_hover-primary {
-    @include button_default($button_hover_primary-color, white);
+    @include button_default($button_hover_primary-color, $button_text-color);
 }
 #button_hover-secondary {
-    @include button_default($button_hover_secondary-color, white);
+    @include button_default($button_hover_secondary-color, $button_text-color);
 }
 #button_hover-success {
-    @include button_default($button_hover_success-color, white);
+    @include button_default($button_hover_success-color, $button_text-color);
 }
 #button_hover-danger {
-    @include button_default($button_hover_danger-color, white);
+    @include button_default($button_hover_danger-color, $button_text-color);
 }
 #button_hover-warning {
-    @include button_default($button_hover_warning-color, white);
+    @include button_default($button_hover_warning-color, $button_text-color);
 }
 #button_hover-info {
-    @include button_default($button_hover_info-color, white);
+    @include button_default($button_hover_info-color, $button_text-color);
 }
 #button_active-primary {
-    @include button_default($button_active_primary-color, white);
+    @include button_default($button_active_primary-color, $button_text-color);
 }
 #button_active-secondary {
-    @include button_default($button_active_secondary-color, white);
+    @include button_default($button_active_secondary-color, $button_text-color);
 }
 #button_active-success {
-    @include button_default($button_active_success-color, white);
+    @include button_default($button_active_success-color, $button_text-color);
 }
 #button_active-danger {
-    @include button_default($button_active_danger-color, white);
+    @include button_default($button_active_danger-color, $button_text-color);
 }
 #button_active-warning {
-    @include button_default($button_active_warning-color, white);
+    @include button_default($button_active_warning-color, $button_text-color);
 }
 #button_active-info {
-    @include button_default($button_active_info-color, white);
+    @include button_default($button_active_info-color, $button_text-color);
 }
 
 .tabs__container {
@@ -97,12 +97,12 @@ h2 {
             border-width: 2px;
         } 
         > .tab__input:checked + .tab-wide-label {
-            color: #fff;
+            color: $tab-label_background-color;
         } 
     }
     .tabs-wide__container {
         @include tabs-container();
-        border: 1px solid #ddd;
+        border: 1px solid #dddddd;
         > .tab-wide-label {
             @include tab-label();
             border: $tab-label_border-color;
@@ -124,7 +124,7 @@ h2 {
             border-right: $tab-wide-label-border;
         } 
         > .tab__input:checked + .tab-wide-label {
-            color: #fff;
+            color: $tab-label_background-color;
         } 
     
     }
@@ -146,15 +146,15 @@ h2 {
     > .tabs-line__container {
         @include tabs-container();
         > .tab__input:checked + .tab-line-label {
-            border-color: #5bc286;
+            border-color: $green__tabs-color;
         } 
         > .tab__input:checked + .tab-wide-label {
-            background-color: #5bc286;
+            background-color: $green__tabs-color;
         } 
     }
     > .tabs-wide__container {
         > .tab__input:checked + .tab-wide-label {
-            background-color: #5bc286;
+            background-color: $green__tabs-color;
         } 
     }
 }
@@ -162,12 +162,12 @@ h2 {
     margin-left: 12%;
     > .tabs-line__container {
         > .tab__input:checked + .tab-line-label {
-            border-color: #ec5c5c;
+            border-color: $red__tabs-color;
         }        
     }  
     > .tabs-wide__container {
         > .tab__input:checked + .tab-wide-label {
-            background-color: #ec5c5c;
+            background-color: $red__tabs-color;
         } 
     } 
 }
