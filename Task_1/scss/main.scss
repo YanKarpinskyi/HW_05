@@ -83,3 +83,77 @@ h2{
 #button_active-info{
     @include button_default($button_active_info-color, white);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabs-line__container {
+    @include tabs-container();
+}
+
+.tab__input {
+    display: none;
+}
+
+.tab-line-label {
+    @include tab-label();
+}
+
+.tab-line-label:hover {
+    color: $tab-checked-hover-color;
+}
+
+.tab__input:checked + .tab-line-label {
+    color: $tab-checked-hover-color;
+    border-color: #2ecc71;
+    border-width: 2px;
+}
+
+.tabs-wide__container {
+    @include tabs-container();
+    border: 1px solid #ddd;
+}
+
+.tab-wide-label {
+    @include tab-label();
+    border: $tab-label_border-color;
+    border-bottom: $tab-wide-label-border; 
+    border-top: $tab-wide-label-border;
+}
+
+.tab-wide-label:nth-child(2) {   
+    border: $tab-wide-label-border;
+    @include tab-wide-label_bradius_first-tab();
+}
+
+.tab-wide-label:last-child {
+    border-right: $tab-wide-label-border;
+    @include tab-wide-label_bradius_last-tab();
+}
+
+.tab-wide-label:not(:last-child) {
+    border-right: $tab-wide-label-border;
+}
+
+.tab-wide-label:hover {
+    color: $tab-checked-hover-color;
+}
+
+.tab__input:checked + .tab-wide-label {
+    color: #fff;
+    background-color: #2ecc71;
+}
