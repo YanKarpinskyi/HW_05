@@ -86,7 +86,6 @@ h2 {
 
 .tabs__container {
     margin-top: 50px;
-    margin-left: 8%;
     .tabs-line__container {
         @include tabs-container();
         > .tab-line-label:hover {
@@ -125,8 +124,7 @@ h2 {
         } 
         > .tab__input:checked + .tab-wide-label {
             color: $tab-label_background-color;
-        } 
-    
+        }     
     }
 }
 .green__tabs__container,
