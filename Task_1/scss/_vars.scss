@@ -48,3 +48,30 @@ $tab-checked-hover-color: #000000;
 $tab-wide-label-border: none;
 $green__tabs-color: #5bc286;
 $red__tabs-color: #ec5c5c;
+
+
+
+$checkbox__border__first-line: #808080;
+$checkbox__border__second-line: lighten($checkbox__border__first-line, 30%);
+$checkbox__bg-color__first-line: #e7e7e7;
+$checkbox__bg-color__second-line: lighten($checkbox__bg-color__first-line, 5%);
+$checkbox__border__third-line: #80808000;
+$checkbox__border__fourth-line: #80808000;
+
+$checkbox__bg-color__third-line_1: #48bb78;
+$checkbox__bg-color__third-line_2: #f08742;
+$checkbox__bg-color__third-line_3: #208ef5;
+$checkbox__bg-color__third-line_4: #eb524d;
+$checkbox__bg-color__third-line_5: #464545;
+
+$checkbox__bg-color__fourth-line_1: lighten($checkbox__bg-color__third-line_1, 23%);
+$checkbox__bg-color__fourth-line_2: lighten($checkbox__bg-color__third-line_2, 23%);
+$checkbox__bg-color__fourth-line_3: lighten($checkbox__bg-color__third-line_3, 23%);
+$checkbox__bg-color__fourth-line_4: lighten($checkbox__bg-color__third-line_4, 23%);
+$checkbox__bg-color__fourth-line_5: lighten($checkbox__bg-color__third-line_5, 23%);
+
+$checkbox__sign__color__fourth-line_1: lighten($checkbox__bg-color__third-line_1, 37%);
+$checkbox__sign__color__fourth-line_2: lighten($checkbox__bg-color__third-line_2, 30%);
+$checkbox__sign__color__fourth-line_3: lighten($checkbox__bg-color__third-line_3, 35%);
+$checkbox__sign__color__fourth-line_4: lighten($checkbox__bg-color__third-line_4, 31%);
+$checkbox__sign__color__fourth-line_5: lighten($checkbox__bg-color__third-line_5, 53%);
