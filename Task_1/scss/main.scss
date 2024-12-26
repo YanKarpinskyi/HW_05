@@ -83,7 +83,6 @@ h2 {
 #button_active-info {
     @include button_default($button_active_info-color, $button_text-color);
 }
-
 .tabs__container {
     margin-top: 50px;
     .tabs-line__container {
@@ -169,50 +168,35 @@ h2 {
         } 
     } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+#first__line__checkbox_1,
+#second__line__checkbox_1{
+    margin-left: 0;
+}
 .checkbox__first-line {
     @include checkbox__style($checkbox__border__first-line, $checkbox__bg-color__first-line);
 }
-
 .checkbox__second-line{
     @include checkbox__style($checkbox__border__second-line, $checkbox__bg-color__second-line);
 }
-
-
-
 #third__line__checkbox_1 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__third-line_1);
+    margin-left: 0;
 } 
-
 #third__line__checkbox_2 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__third-line_2);
 } 
-
 #third__line__checkbox_3 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__third-line_3);
 } 
-
 #third__line__checkbox_4 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__third-line_4);
 } 
-
 #third__line__checkbox_5 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__third-line_5);
 } 
-
 #fourth__line__checkbox_1 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__fourth-line_1);
+    margin-left: 0;
 } 
 #fourth__line__checkbox_2 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__fourth-line_2);
@@ -226,106 +210,45 @@ h2 {
 #fourth__line__checkbox_5 {
     @include checkbox__style($checkbox__border__third-line, $checkbox__bg-color__fourth-line_5);
 } 
-
-
-
-
 #fourth__line__checkbox_1:checked {
     border-color: solid $checkbox__sign__color__fourth-line_1;
 }
-
 #fourth__line__checkbox_2:checked {
     border-color: solid $checkbox__sign__color__fourth-line_2;
 }
-
 #fourth__line__checkbox_3:checked {
     border-color: solid $checkbox__sign__color__fourth-line_3;
 }
-
 #fourth__line__checkbox_4:checked {
     border-color: solid $checkbox__sign__color__fourth-line_4;
 }
-
 #fourth__line__checkbox_5:checked {
     border-color: solid $checkbox__sign__color__fourth-line_5;
 }
-
 #fourth__line__checkbox_1:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid $checkbox__sign__color__fourth-line_1;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg); 
+    @include fourth__line__checkbox__checked-after($checkbox__sign__color__fourth-line_1);
 }
-
-
 #fourth__line__checkbox_2:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid $checkbox__sign__color__fourth-line_2;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
+    @include fourth__line__checkbox__checked-after($checkbox__sign__color__fourth-line_2);
 }
-
 #fourth__line__checkbox_3:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid $checkbox__sign__color__fourth-line_3;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
+    @include fourth__line__checkbox__checked-after($checkbox__sign__color__fourth-line_3);
 }
-
 #fourth__line__checkbox_4:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid $checkbox__sign__color__fourth-line_4;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
+    @include fourth__line__checkbox__checked-after($checkbox__sign__color__fourth-line_4);
 }
-
 #fourth__line__checkbox_5:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid $checkbox__sign__color__fourth-line_5;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
+    @include fourth__line__checkbox__checked-after($checkbox__sign__color__fourth-line_5);
 }
-
+.third_line{
+    margin-bottom: -10px;
+}
 .checkbox__third-line:checked,
 .checkbox__fourth-line:checked {
-    background-color: #db1e1e;
-    border-color: #ffffff;    
+    background-color: $checkbox__bg-color__checked;
+    border-color: $checkbox__border-color__checked; 
 }
-
 .checkbox__third-line:checked::after,
 .checkbox__fourth-line:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 4px;
-    height: 11px;
-    border: solid white;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg); 
+    @include checkbox__checked-after();
 }

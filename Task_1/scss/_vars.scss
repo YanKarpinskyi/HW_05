@@ -14,28 +14,25 @@ $button_description_color-active: lighten($button_description_color-hover, 2%);
 $button_default_primary-color: #6dc5ff;
 $button_hover_primary-color: darken($button_default_primary-color, 10%);
 $button_active_primary-color: darken($button_hover_primary-color, 10%);
-
 $button_default_secondary-color: #ffa75e;
 $button_hover_secondary-color: darken($button_default_secondary-color, 10%);
 $button_active_secondary-color: darken($button_hover_secondary-color, 10%);
-
 $button_default_success-color:  #12ea12;
 $button_hover_success-color: darken($button_default_success-color, 10%);
 $button_active_success-color: darken($button_hover_success-color, 10%);
-
 $button_default_danger-color: #f97474;
 $button_hover_danger-color: darken($button_default_danger-color, 10%);
 $button_active_danger-color: darken($button_hover_danger-color, 10%);
-
 $button_default_warning-color: #f1f146;
 $button_hover_warning-color: darken($button_default_warning-color, 10%);
 $button_active_warning-color: darken($button_hover_warning-color, 10%);
-
 $button_default_info-color: #62d3b9;
 $button_hover_info-color: darken($button_default_info-color, 10%);
 $button_active_info-color: darken($button_hover_info-color, 10%);
+
 $tabs-container__display: inline-flex; 
 $tabs-container__border-radius: 5px;
+
 $tab-label_padding: 10px 20px;
 $tab-label_margin: 0;
 $tab-label_font-size: 14px;
@@ -44,12 +41,12 @@ $tab-label_cursor: pointer;
 $tab-label_background-color: #ffffff;
 $tab-label_border-color: 1px solid #dddddd;
 $tab-label_transition: all 0.3s ease;
+
 $tab-checked-hover-color: #000000;
 $tab-wide-label-border: none;
+
 $green__tabs-color: #5bc286;
 $red__tabs-color: #ec5c5c;
-
-
 
 $checkbox__border__first-line: #808080;
 $checkbox__border__second-line: lighten($checkbox__border__first-line, 30%);
@@ -75,3 +72,5 @@ $checkbox__sign__color__fourth-line_2: lighten($checkbox__bg-color__third-line_2
 $checkbox__sign__color__fourth-line_3: lighten($checkbox__bg-color__third-line_3, 35%);
 $checkbox__sign__color__fourth-line_4: lighten($checkbox__bg-color__third-line_4, 31%);
 $checkbox__sign__color__fourth-line_5: lighten($checkbox__bg-color__third-line_5, 53%);
+$checkbox__bg-color__checked: #db1e1e;
+$checkbox__border-color__checked: #ffffff00;

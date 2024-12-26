@@ -49,3 +49,27 @@
     vertical-align: middle;
     position: relative;
 }
+
+@mixin fourth__line__checkbox__checked-after($sign-color) {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 4px;
+    height: 11px;
+    border: solid $sign-color;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+@mixin checkbox__checked-after() {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 4px;
+    height: 11px;
+    border: solid #ffffff;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg); 
+}
